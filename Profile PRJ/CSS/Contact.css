@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 10px 5%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.logo {
+    width: 100px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 22px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.leftside {
+    background-color: red;
+    float: left;
+    width: 50%;
+    margin-top: 5%;
+    font-size: 20px;
+    color:#14fff3;
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 5px;
+    padding: 10px;
+}
+input[type=text], select, textarea, .leftside {
+    width: 50%;
+    padding: 18px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 15px;
+    margin-bottom: 8px;
+  }
+  input[type=submit],.leftside {
+    background-color: #04AA6D;
+    color:  #14fff3;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    border-color: #14fff3;
+  }
+  
+  input[type=submit]:hover,.leftside {
+    background-color:black;
+  }
+.rightside {
+    background-color: blue;
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding:40px 16%;
+    margin-top: 13%;
+    font-size: 20px;
+    color:#14fff3;
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #14fff3;
+
+}
+.l {
+    width: 50px;
+}
+/* ---------------------------------------css for small screen --------------------------------------------- */
+@media only screen and (max-width: 600px){
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins',sans-serif;
+        box-sizing: border-box;
+    }
+    .container{
+        padding: 25px 5%;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background-color: black;
+        opacity: 0.8;
+    }
+    .logo {
+        width: 40px;
+    }
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 40px 2px;
+    }
+    nav ul li a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 22px;
+        position: relative;
+    }
+    nav ul li a::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background: red;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.5s;
+    }
+    nav ul li a:hover::after{
+        width: 100%;
+    }
+    .header-text{
+        padding:40px 10%;
+        margin-top: 50%;
+        font-size: 40px;
+        color:#14fff3;
+        background-color: black;
+        opacity: 0.8;
+    }
+}

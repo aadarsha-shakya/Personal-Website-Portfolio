@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.container{
+    padding: 10px 5%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: black;
+    opacity: 0.8;
+}
+.logo {
+    width: 100px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 22px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.CirriculumV{
+    width: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;  
+    opacity: 0.8;
+}
+/* ---------------------------------------css for small screen --------------------------------------------- */
+@media only screen and (max-width: 600px){
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins',sans-serif;
+        box-sizing: border-box;
+    }
+    .container{
+        padding: 25px 5%;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background-color: black;
+        opacity: 0.8;
+    }
+    .logo {
+        width: 40px;
+    }
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 40px 2px;
+    }
+    nav ul li a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 22px;
+        position: relative;
+    }
+    nav ul li a::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background: red;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.5s;
+    }
+    nav ul li a:hover::after{
+        width: 100%;
+    }
+    .header-text{
+        padding:40px 10%;
+        margin-top: 50%;
+        font-size: 40px;
+        color:#14fff3;
+        background-color: black;
+        opacity: 0.8;
+    }
+    .CirriculumV{
+        width: 700px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;  
+        opacity: 0.8;
+    }
+}
